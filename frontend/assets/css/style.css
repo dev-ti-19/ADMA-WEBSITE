@@ -1,0 +1,28 @@
+.paralax#home {
+  background-image: url("https://cdn.pixabay.com/photo/2015/09/29/22/49/blueprint-964630_960_720.jpg");
+}
+
+.paralax {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.thumbnail {
+  position: relative;
+}
+ .caption {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 100%;
+}
+
+.image-item{
+  width: 30rem;
+  height: 15rem;
+}
+.dos-n{
+  right: 25%;
+}
