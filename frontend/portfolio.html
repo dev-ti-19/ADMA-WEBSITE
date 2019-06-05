@@ -32,143 +32,119 @@
   </head>
 
   <body>
-    <header class="header-global fixed-top">
-      <nav
-        id="navbar-main"
-        class="navbar   navbar-main navbar-expand-lg navbar-transparent navbar-light navbar-dark bg-dark headroom"
-      >
-        <div class="container">
-          <a class="navbar-brand mr-lg-5" href="../index.html">
-            <img src="assets/img/portfolio/logo.png" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar_global"
-            aria-controls="navbar_global"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbar_global">
-            <div class="navbar-collapse-header">
-              <div class="row">
-                <div class="col-6 collapse-brand">
-                  <a href="#">
-                    <img src="assets/img/portfolio/logo.png" />
-                  </a>
-                </div>
-                <div class="col-6 collapse-close">
-                  <button
-                    type="button"
-                    class="navbar-toggler"
-                    data-toggle="collapse"
-                    data-target="#navbar_global"
-                    aria-controls="navbar_global"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span></span>
-                    <span></span>
-                  </button>
-                </div>
+    <header class="header-global ">
+      <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
+          <div class="container">
+              <a class="navbar-brand text-dark" href="#">Default Color</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-default">
+                  <div class="navbar-collapse-header">
+                      <div class="row">
+                          <div class="col-6 collapse-brand">
+                              <a href="index.html">
+                                  <img src="assets/img/brand/blue.png">
+                              </a>
+                          </div>
+                          <div class="col-6 collapse-close">
+                              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span></span>
+                                  <span></span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <ul class="navbar-nav ml-lg-auto">
+                      <li class="nav-item">
+                          <a class="nav-link nav-link-icon text-dark" href="#">
+                              <i class="ni ni-favourite-28"></i>
+                              <span class="nav-link-inner--text">Home</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-link-icon text-dark" href="#">
+                              <i class="ni ni-folder-17"></i>
+                              <span class="nav-link-inner--text">Portafolio</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-link-icon text-dark" href="#" id="navbar-default_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="ni ni-satisfied"></i>
+                              <span class="nav-link-inner--text">About</span>
+                          </a>
+                      </li>
+                  </ul>
+      
               </div>
-            </div>
-            <ul
-              class="navbar-nav navbar-nav-hover ml-auto align-items-lg-center"
-            >
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                >
-                  <i class="ni ni-ui-04 d-lg-none"></i>
-                  <span class="nav-link-inner--text">Home</span>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                >
-                  <i class="ni ni-collection d-lg-none"></i>
-                  <span class="nav-link-inner--text">Portfolio</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                >
-                  <i class="ni ni-ui-04  d-lg-none"></i>
-                  <span class="nav-link-inner--text">About us</span>
-                </a>
-              </li>
-            </ul>
           </div>
-        </div>
       </nav>
     </header>
 
-    <section class="section">
-      <div class="container">
-        <h1 class="text-center display-4 my-5 mb-5">Portfolio</h1>
-        <div class="col-md-2 ml-auto mr-auto">
-                     
-        <div class="row">
-          <div class="nav-align-center">
-            <nav aria-label="Page navigation example" class="mb-2 ">
-              <ul
-                class="pagination nav nav-pills nav-pills-primary "
-                id="buttons"
-              >
-                <li class="page-item  ">
-                  <a
-                    class="page-link active "
-                    href="#galeria"
-                    data-toggle="tab"
-                    role="tablist"
-                    >1</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-          </div>
-        </div>
+    <!-- Main layout -->
+    <main>
+        <section class="section section-lg section-shaped pb-250">
+            <div class="shape shape-style-1 shape-default paralax" id="home"></div>
+            <div class="container py-lg-md d-flex">
+                <div class="col px-0">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="display-3  text-black">ADMA Arquitectos
+                            <span><strong>completed with examples</strong></span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+              <h1 class="text-center display-4 my-5 mb-5">Portfolio</h1>
+              <div class="col-md-2 ml-auto mr-auto">
+                           
+              <div class="row">
+                <div class="nav-align-center">
+                  <nav aria-label="Page navigation example" class="mb-2 ">
+                    <ul
+                      class="pagination nav nav-pills nav-pills-primary "
+                      id="buttons"
+                    >
+                      <li class="page-item  ">
+                        <a
+                          class="page-link active "
+                          href="#galeria"
+                          data-toggle="tab"
+                          role="tablist"
+                          >1</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                </div>
+              </div>
+      
+              <div class="tab-content gallery mt-5" id="actions">
+                <div class="tab-pane active" id="galeria">
+                  <div class="card-columns" id="gallery"> </div>
+              </div>
+      
+              <div class="tab-pane" id="galeria2" role="tabpanel">
+                  <div class="card-columns" id="gallery2"> </div>
+              </div>
 
-        <div class="tab-content gallery mt-5" id="actions">
-          <div class="tab-pane active" id="galeria">
-            <div class="card-columns" id="gallery"> </div>
-        </div>
+               <div class="tab-pane" id="galeria3" role="tabpanel">
+                  <div class="card-columns" id="gallery3"> </div>
+              </div>
+      
+              </div><!--<div class="tab-content gallery mt-5">-->
+            </div>
+          </section>
 
-        <div class="tab-pane" id="galeria2" role="tabpanel">
-            <div class="card-columns" id="gallery2"> </div>
-        </div>
-        
-    
-        
-
-        <div class="tab-pane" id="galeria3" role="tabpanel">
-            <div class="card-columns" id="gallery3"> </div>
-        </div>
-
-        </div><!--<div class="tab-content gallery mt-5">-->
-      </div>
-    </section>
-
+    </main><!--Main Layout-->
+  
+    <!--Footer-->
     <footer class="footer bg-dark text-white">
       <div class="container">
         <div class="row row-grid align-items-center mb-10 ">
@@ -226,6 +202,7 @@
         </div>
       </div>
     </footer>
+    <!--Footer-->
     <script src="assets/js/carousel.js"></script>
 
     <!-- Core -->
