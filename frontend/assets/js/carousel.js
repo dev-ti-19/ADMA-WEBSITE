@@ -10,9 +10,17 @@ var images = [1, 2, 3,4,5,6,7,8,9];
 var gallery = document.getElementById("gallery");
 for (image of images) {
   gallery.innerHTML += ` 
-        <div class="card">
+        <div class="card card-pin">
             <a href="#" data-toggle="modal" data-target="#id${image}">
                 <img src="assets/img/portfolio/${image}.jpg" alt="" class="card-img-top" >
+                <div class="overlay">
+                    <h3 class="card-title title">Some Title</h3>
+                    <div class="more">
+                    <a href="#!">
+                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More
+                    </a>
+                    </div>
+                </div>
             </a>
         </div>`;
 }
