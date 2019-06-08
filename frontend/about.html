@@ -7,6 +7,9 @@
   
     <title>ADMA Arquitectos</title>
   
+    
+    
+    <link rel="stylesheet" href="assets/css/styleservice.css">
     <!-- Favicon -->
     <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
   
@@ -21,87 +24,175 @@
     <link href="assets/css/argon.css" rel="stylesheet">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/animate.css">
   </head>
 
 <body>
-  <header class="header-global fixed-top">
-    <nav id="navbar-main" class="navbar   navbar-main navbar-expand-lg navbar-transparent navbar-light navbar-dark bg-dark headroom">
-      <div class="container">
-        <a class="navbar-brand mr-lg-5" href="#">
-          <img src="assets/img/portfolio/logo.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="#">
-                  <img src="assets/img/portfolio/logo.png">
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="#">Default Color</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-default">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="index.html">
+                                <img src="assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon text-dark" href="#">
+                            <i class="ni ni-favourite-28"></i>
+                            <span class="nav-link-inner--text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon text-dark" href="#">
+                            <i class="ni ni-folder-17"></i>
+                            <span class="nav-link-inner--text">Portafolio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon text-dark" href="#" id="navbar-default_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ni ni-satisfied"></i>
+                            <span class="nav-link-inner--text">About</span>
+                        </a>
+                    </li>
+                </ul>
+    
             </div>
-          </div>
-          <ul class="navbar-nav navbar-nav-hover ml-auto align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="ni ni-ui-04 d-lg-none"></i>
-                <span class="nav-link-inner--text">Home</span>
-              </a>
-          
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="ni ni-collection d-lg-none"></i>
-                <span class="nav-link-inner--text">Portfolio</span>
-              </a>
-           </li>
-           
-           <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="ni ni-ui-04  d-lg-none"></i>
-                <span class="nav-link-inner--text">About us</span>
-              </a>
-           </li>
-          </ul>
-          
         </div>
-      </div>
     </nav>
   </header>
-
-    <section class="section section-lg">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-lg">
-          <div class="col-lg-8">
-            <h2 class="display-3">History</h2>
-            <p class="lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet natus fuga alias eius quam saepe expedita facilis velit. Odit vel sed illo aliquid quisquam corporis eligendi officia neque iusto enim!</p>
-              
-                <h5 class="display-5">What do we do</h5>
-                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dolorem soluta consequuntur..</p>
-            
+  <!--Main-->
+  <main>
+      <section class="section section-lg section-shaped pb-250">
+          <div class="shape shape-style-1 shape-default paralax" id="home"></div>
+          <div class="container py-lg-md d-flex">
+              <div class="col px-0">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <h1 class="display-3  text-black">ADMA Arquitectos
+                          <span><strong>completed with examples</strong></span>
+                          </h1>
+                      </div>
+                  </div>
               </div>
-          <div class="col-md-4">
-            <img src="assets/img/portfolio/3.jpg" class="card-img" alt="..." style="height: 300px;">
           </div>
-        </div>
-     
-      </div>
-    </section>
-  
+      </section>
+    <section class="ftco-services section-lg " >
+	      <div class="container">
+	        <div class="row no-gutters" >
+	          <div class="col-md-5 py-5 nav-link-wrap ftco-animate " style="background-color: black;" >
+	            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+	            	<h3 class="ml-3"> Our services</h3>
+	              <a class="nav-link px-4 active" style="background-color: black;" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-master" role="tab" aria-controls="v-pills-master" aria-selected="true"><span class="fa fa-facebook-square  btn-lg "></span> Service 1</a>
 
-      <section class="section section-lg">
+	              <a class="nav-link px-4 " style="background-color: black;" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-buffet" role="tab" aria-controls="v-pills-buffet" aria-selected="false"><span class="fa fa-facebook-square  btn-lg "></span> Service 2</a>
+
+	              <a class="nav-link px-4 "style="background-color: black;"  data-toggle="pill" href="#v-pills-fitness" role="tab" aria-controls="v-pills-fitness" aria-selected="false"><span class="fa fa-facebook-square btn-lg "></span> Service 3</a>
+
+                <a class="nav-link px-4 "style="background-color: black;"  id="v-pills-reception-tab" data-toggle="pill" href="#v-pills-reception" role="tab" aria-controls="v-pills-reception" aria-selected="false"><span class="fa fa-facebook-square btn-lg "></span> Service 4</a>
+
+                <a class="nav-link px-4 " style="background-color: black;" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-buffets" role="tab" aria-controls="v-pills-buffets" aria-selected="false"><span class="fa fa-facebook-square  btn-lg "></span> Service 5</a>
+
+	            </div>
+	          </div>
+	          <div class="col-md-7 ftco-animate p-4 p-md-5 d-flex align-items-center">
+	            
+	            <div class="tab-content pl-md-5" id="v-pills-tabContent">
+
+	              <div class="tab-pane fade show active py-5" id="v-pills-master" role="tabpanel" aria-labelledby="v-pills-master-tab">
+	                <h2 class="mb-4">Service 1</h2>
+	                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae, suscipit sed facere porro quidem ducimus ipsum, consequatur, reprehenderit alias temporibus recusandae vel nisi magni molestias totam ut eos delectus.</p>
+	                <p><a href="#" class="btn btn-primary px-4 py-3" style="background-color: black;">Read More</a></p>
+	              </div>
+
+	              <div class="tab-pane fade py-5" id="v-pills-buffet" role="tabpanel" aria-labelledby="v-pills-buffet-tab">
+	                <h2 class="mb-4">Serivce 2</h2>
+	                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas voluptatem similique pariatur! Molestiae facilis corrupti quisquam ipsam molestias placeat quod ea eius ad explicabo, eaque earum voluptatem eos amet quo aspernatur quam cum officiis.</p>
+	                <p><a href="#" class="btn btn-primary px-4 py-3"style="background-color: black;">Read More</a></p>
+	              </div>
+
+	              <div class="tab-pane fade py-5" id="v-pills-fitness" role="tabpanel" aria-labelledby="v-pills-fitness-tab">
+	                <h2 class="mb-4">Service 3</h2>
+	                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt praesentium facere modi? Molestias, autem. Molestias voluptatum exercitationem architecto temporibus fugiat, dignissimos dolore, animi suscipit odit rem magni facilis ut quas maxime eius eaque ipsum ipsa quasi tempora. Optio, adipisci illum repellat excepturi debitis odio provident voluptates quaerat nisi aliquam nemo explicabo quibusdam quae consequatur. Modi quia minima obcaecati tempore!</p>
+	                <p><a href="#" class="btn btn-primary px-4 py-3"style="background-color: black;">Read More</a></p>
+	              </div>
+
+	              <div class="tab-pane fade py-5" id="v-pills-reception" role="tabpanel" aria-labelledby="v-pills-reception-tab">
+	                <h2 class="mb-4">Service 4</h2>
+	                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab consequuntur esse sapiente nesciunt provident atque dignissimos eius sequi minima! Beatae ad accusantium repudiandae ducimus optio nulla animi rem ratione.</p>
+                  <p><a href="#" class="btn btn-primary px-4 py-3"style="background-color: black;">Read More</a></p>
+	              </div>
+                  <div class="tab-pane fade py-5" id="v-pills-buffets" role="tabpanel" >
+                       <h2 class="mb-4">Serivce 5</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas voluptatem similique pariatur! Molestiae facilis corrupti quisquam ipsam molestias placeat quod ea eius ad explicabo, eaque earum voluptatem eos amet quo aspernatur quam cum officiis.</p>
+                      <p><a href="#" class="btn btn-primary px-4 py-3"style="background-color: black;">Read More</a></p>
+                    </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+      </section>
+      <!--What  do we do -->
+      <section class="ftco-section">
+	    	<div class="container">
+	    		<div class="row justify-content-center mb-5 pb-5">
+	          <div class="col-md-7 text-center heading-section ftco-animate">
+	            <h2 class="mb-4">How do we do </h2>
+	          </div>
+	        </div>
+	    		<div class="row">
+	    			<div class="col-md-4 ftco-animate">
+	    				<div class="services">
+	    					<h3><span>01.</span> Step 1</h3>
+	    					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem dignissimos quae cum beatae assumenda, nihil dicta. Totam, cumque recusandae?</p>
+	    				</div>
+	    			</div>
+	    			<div class="col-md-4 ftco-animate">
+	    				<div class="services">
+	    					<h3><span>02.</span>Step 2</h3>
+	    					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure blanditiis possimus eos autem molestiae!</p>
+	    				</div>
+	    			</div>
+	    			<div class="col-md-4 ftco-animate">
+	    				<div class="services">
+	    					<h3><span>03.</span> Step 3</h3>
+	    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas consequuntur facere hic odio amet laudantium omnis, nostrum natus.</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+      </section>
+      
+      
+   
+      <!--About us-->
+      <section class="section ftco-section">
         <div cla  ss="container">
           <div class="row row-grid justify-content-center">
             <div class="col-lg-8 text-center">
-              <h2 class="display-3">About us </h2>
+                <div class="col-md-14 text-center heading-section ftco-animate">
+                <h2 class="mb-4 ">About us</h2>
+                </div>
               <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur rerum maxime velit debitis architecto, ea eos amet dicta voluptates. Debitis nostrum sunt explicabo tempora voluptatem officia incidunt velit quas dicta.
             </p>  
             </div>
@@ -134,8 +225,9 @@
             </div>
         </div>
       </section>
-
-
+  </main>
+  <!--Main-->
+  <!--Footer-->
   <footer class="footer bg-dark text-white">
     <div class="container">
       <div class="row row-grid align-items-center mb-10 ">
@@ -159,12 +251,12 @@
                     <li class="nav-item  m-auto">
                       Social Networks
                       <div class="col">
-                        <a target="_blank" href="https://twitter.com/creativetim"
+                        <a target="_blank" href="#"
                           class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg" data-toggle="tooltip"
                           data-original-title="Follow us">
                           <i class="fa fa-instagram"></i>
                         </a>
-                        <a target="_blank" href="https://www.facebook.com/creativetim"
+                        <a target="_blank" href="#"
                           class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip"
                           data-original-title="Like us">
                           <i class="fa fa-facebook-square"></i>
@@ -176,13 +268,30 @@
       </div>
     </div>
   </footer>
+  <!--Footer-->
   <!-- Core -->
+
+  
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/popper/popper.min.js"></script>
   <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="assets/vendor/headroom/headroom.min.js"></script>
+
+  <!--Service section js-->
+  <script src="assets/vendor/jquery/service section/jquery-migrate-3.0.1.min.js"></script>
+  <script src="assets/vendor/jquery/service section/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/jquery/service section/jquery.stellar.min.js"></script>
+  <script src="assets/vendor/jquery/service section/owl.carousel.min.js"></script>
+  <script src="assets/vendor/jquery/service section/aos.js"></script>
+  <script src="assets/vendor/jquery/service section/scrollax.min.js"></script>
+ <script src="assets/vendor/jquery/service section/main.js"></script>
   <!-- Argon JS -->
   <script src="assets/js/argon.js?v=1.0.1"></script>
+
+ 
+      </div>
+      <!--   Core JS Files   -->
+
 </body>
 
 </html>
