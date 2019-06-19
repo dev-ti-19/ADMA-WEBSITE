@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::group(['prefix' => 'proyects'], function () {
+    Route::get('view/{id}', [
+        'uses' => 'PortafolioController@detail',
+        'as' => 'proyectsView'
+    ]);
+});
