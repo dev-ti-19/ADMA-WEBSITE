@@ -1,20 +1,6 @@
 @extends('template')
 @section('title', 'Home')
 @section('content')
-<section class="section section-lg section-shaped pb-250">
-        <div class="shape shape-style-1 shape-default paralax" id="home"></div>
-        <div class="container py-lg-md d-flex">
-            <div class="col px-0">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="display-3  text-black">ADMA Arquitectos
-                        <span><strong>completed with examples</strong></span>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="section bg-secondary">
         <div class="container">
             <div class="row row-grid align-items-center">

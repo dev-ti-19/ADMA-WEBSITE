@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>ADMA Arquitectos - @yield('title')</title>
-        <link rel="stylesheet" href="{{asset('css/styleservice.css')}}">
         <link rel="stylesheet" href="{{asset('css/animate.css')}}">
         <!-- Favicon -->
         <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -75,6 +74,20 @@
 
         {{-- main --}}
         <main>
+          <section class="section section-lg section-shaped pb-250">
+              <div class="shape shape-style-1 shape-default paralax" id="home"></div>
+              <div class="container py-lg-md d-flex">
+                  <div class="col px-0">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <h1 class="display-3  text-black">ADMA Arquitectos
+                              <span><strong>completed with examples</strong></span>
+                              </h1>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
             @yield('content')
         </main>
 
