@@ -8,6 +8,12 @@ use App\Proyect;
 class PortafolioController extends Controller
 {
     //
+    public function all()
+    {   
+        $proyects = Proyect::orderBy('id', 'ASC')->paginate(10);
+        return view('proyects')->with('proyects', $proyects);
+    }
+
     public function detail($id)
     {
         $proyect = Proyect::find($id);

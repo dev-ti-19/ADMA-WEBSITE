@@ -20,8 +20,13 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::group(['prefix' => 'proyects'], function () {
+    Route::get('/', [
+        'uses' => 'PortafolioController@all',
+        'as' => 'allProyects',
+    ]);
+
     Route::get('view/{id}', [
         'uses' => 'PortafolioController@detail',
         'as' => 'proyectsView'
-    ]);
+    ])->name('detalle');
 });
