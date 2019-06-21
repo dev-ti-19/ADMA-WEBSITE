@@ -6,6 +6,7 @@
 
         <title>ADMA Arquitectos - @yield('title')</title>
         <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+        {{-- <link rel="stylesheet" href="{{asset('css/styleservice.css')}}"> --}}
         <!-- Favicon -->
         <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
 
@@ -49,19 +50,19 @@
                             <li class="nav-item">
                             <a class="nav-link nav-link-icon text-dark" href="{{route('home')}}">
                                     <i class="ni ni-favourite-28"></i>
-                                    <span class="nav-link-inner--text">Home</span>
+                                    <span class="color nav-link-inner--text">Home</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link nav-link-icon text-dark" href="{{route('allProyects')}}">
                                     <i class="ni ni-folder-17"></i>
-                                    <span class="nav-link-inner--text">Portafolio</span>
+                                    <span class="color nav-link-inner--text">Portafolio</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link nav-link-icon text-dark" href="{{route('about')}}">
                                     <i class="ni ni-satisfied"></i>
-                                    <span class="nav-link-inner--text">About</span>
+                                    <span class="color nav-link-inner--text">About</span>
                                 </a>
                             </li>
                         </ul>
@@ -80,8 +81,8 @@
                   <div class="col px-0">
                       <div class="row">
                           <div class="col-lg-6">
-                              <h1 class="display-3  text-black">ADMA Arquitectos
-                              <span><strong>completed with examples</strong></span>
+                              <h1 class=" color display-3  text-black">ADMA Arquitectos
+                              <span><strong>La arquitectura es la materialización de los sueños del hombre.</strong></span>
                               </h1>
                           </div>
                       </div>
@@ -98,7 +99,7 @@
               <div class="row row-grid align-items-center mb-10 ">
                 <div class="col-lg-2">
                   <img
-                    src="assets/img/portfolio/logo.png"
+                    src="{{asset('img/logo.png')}}"
                     alt="logo"
                     style="width:80px;"
                   />
@@ -109,25 +110,33 @@
                       Address
                       <p style="width: 185px;">
                         <font size="2"
-                          >San Isidro, San Vicente Chicoloapan de Juárez Centro,
-                          Chimalhucan, 56370 Chicoloapan de Juárez, Méx.</font
+                          >San Isidro, Mz. 2 Lt. 2, Corte la Palma, Chimalhuacan, 56340, Edo. Mex.</font
+                        >
+                      </p>
+                      <p style="width: 185px;">
+                        <font size="2"
+                          > Av. Acuitlapilco Esq. Aldma, Mz. 1 Lt. 1, San Miguel, Chimalhuacan Edo. Mex.</font
                         >
                       </p>
                     </li>
                     <li class="nav-item m-auto">
                       Telephone
-                      <p>55-55-55-55-55</p>
+                      <p>55 1962 6524</p>
+                  
+                      <p>55 5468 4815</p>
+
+                      <p>55 8653 8340</p>
                     </li>
                     <li class="nav-item m-auto">
                       E-mail
-                      <p>dev.ti2019@gmail.com</p>
+                      <p>adma.arquitectos@gmail.com</p>
                     </li>
                     <li class="nav-item  m-auto">
                       Social Networks
                       <div class="col">
                         <a
                           target="_blank"
-                          href="https://twitter.com/creativetim"
+                          href="https://www.instagram.com/adma.arquitectos/"
                           class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg"
                           data-toggle="tooltip"
                           data-original-title="Follow us"
@@ -136,7 +145,7 @@
                         </a>
                         <a
                           target="_blank"
-                          href="https://www.facebook.com/creativetim"
+                          href="https://www.facebook.com/admamx/"
                           class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg"
                           data-toggle="tooltip"
                           data-original-title="Like us"
@@ -153,7 +162,7 @@
         {{-- footer --}}
     
         <!-- Core -->
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
         <script src="{{asset('vendor/popper/popper.min.js')}}"></script>
         <script src="{{asset('vendor/bootstrap/bootstrap.min.js')}}"></script>
         <script src="{{asset('vendor/headroom/headroom.min.js')}}"></script>
