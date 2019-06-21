@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+Route::get('/about', 'ServiciosController@all')->name('about');
 
 Route::group(['prefix' => 'portfolio'], function () {
     Route::get('/', [
