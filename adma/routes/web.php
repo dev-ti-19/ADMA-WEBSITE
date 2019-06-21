@@ -19,14 +19,14 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::group(['prefix' => 'proyects'], function () {
+Route::group(['prefix' => 'portfolio'], function () {
     Route::get('/', [
         'uses' => 'PortafolioController@all',
         'as' => 'allProyects',
     ]);
 
-    Route::get('view/{id}', [
+    Route::get('detail/{id}', [
         'uses' => 'PortafolioController@detail',
-        'as' => 'proyectsView'
-    ])->name('detalle');
+        'as' => 'proyectsDetail'
+    ]);
 });

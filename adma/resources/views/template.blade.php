@@ -32,8 +32,8 @@
                         <div class="navbar-collapse-header">
                             <div class="row">
                                 <div class="col-6 collapse-brand">
-                                    <a href="index.html">
-                                        <img src="assets/img/brand/blue.png">
+                                    <a href="{{route('home')}}">
+                                    <img src="{{asset('img/logo.png')}}">
                                     </a>
                                 </div>
                                 <div class="col-6 collapse-close">
@@ -53,7 +53,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-link-icon text-dark" href="#">
+                            <a class="nav-link nav-link-icon text-dark" href="{{route('allProyects')}}">
                                     <i class="ni ni-folder-17"></i>
                                     <span class="nav-link-inner--text">Portafolio</span>
                                 </a>
