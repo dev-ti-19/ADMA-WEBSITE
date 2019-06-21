@@ -21,7 +21,7 @@
                 <div class="card-columns" id="gallery">
                     @foreach($proyects as $proyect)
                         <div class="card card-pin">
-                            <a href="#" data-toggle="modal" data-target="{{$proyect->id}}">
+                            <a href="{{route('proyectsDetail', $proyect->id)}}" data-target="{{$proyect->id}}">
                                 <img src="{{asset('img/portfolio')}}/{{$proyect->images[0]->nombre}}" alt="{{$proyect->nombre}}" class="card-img-top" >
                                 <div class="overlay">
                                     <h3 class="card-title title">{{$proyect->nombre}}</h3>

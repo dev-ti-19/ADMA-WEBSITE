@@ -7,13 +7,7 @@
             <div class="col-md-5 py-5 nav-link-wrap ftco-animate " style="background-color: black;" >
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
                 <h3 class="ml-3 text-white"> Nuestros servicios</h3>
-                @foreach ($servicios as $key => $servicio)
-                  @if ($key === 0)
-                    <a class="nav-link active px-4" style="background-color: black;" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab" data-toggle="pill" href="#v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tab" aria-controls="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" aria-selected="true">
-                  @else
-                    <a class="nav-link px-4" style="background-color: black;" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab" data-toggle="pill" href="#v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tab" aria-controls="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" aria-selected="true">
-                  @endif
-                   ° {{$servicio->nombre}}</a>
+                @foreach ($servicios as $key => $servicio)                    <a class="@if($key === 0) active @endif nav-link px-4" style="background-color: black;" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab" data-toggle="pill" href="#v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tab" aria-controls="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" aria-selected="true">° {{$servicio->nombre}}</a>
                 @endforeach
               </div>
             </div>
@@ -21,12 +15,7 @@
                 <div class="tab-content pl-md-5" id="v-pills-tabContent">
                   <div class="tab-content pl-md-5" id="v-pills-tabContent">
                     @foreach ($servicios as $key => $servicio)
-                    @if ($key === 0)
-                    <div class="tab-pane active fade show py-5" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tabpanel" aria-labelledby="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab">
-                    @else
-                    <div class="tab-pane fade show py-5" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tabpanel" aria-labelledby="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab">
-                    @endif
-                    
+                    <div class="@if($key === 0) active @endif tab-pane fade show py-5" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tabpanel" aria-labelledby="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab">                    
                       <h2 class="mb-4">{{$servicio->nombre}}</h2>
                       <p>{{$servicio->descripcion}}</p>
                     </div>

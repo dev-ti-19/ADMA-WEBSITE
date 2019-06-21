@@ -12,7 +12,9 @@ class Proyect extends Model
 
     protected $table = "proyects";
 
-    protected $fillable = ['nombre', 'descripcion', 'creado' , 'status', 'category_id'];
+    protected $fillable = ['nombre', 'descripcion' , 'status', 'category_id'];
+
+    protected $dates = ['creado'];
 
     public function category()
     {

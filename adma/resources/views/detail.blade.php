@@ -7,20 +7,16 @@
       <div class="col-md-6 ftco-animate p-4 p-md-5 d-flex align-items-center">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            @for($i = 0; $i < count($proyect->images); $i++)
+          <li data-target="#carouselExampleIndicators" data-slide-to="{{$i}}" class="@if($i === 0) active @endif"></li>
+            @endfor
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="{{asset('img/portfolio/perfil2.jpg')}}" alt="First slide">
+            @foreach ($proyect->images as $key => $image)
+            <div class="carousel-item @if($key === 0) active @endif">
+            <img class="d-block w-100" src="{{asset('img/portfolio')}}/{{$image->nombre}}" alt="$proyect->nombre">
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{asset('img/portfolio/perfil2.jpg')}}" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="{{asset('img/portfolio/perfil2.jpg')}}" alt="Third slide">
-            </div>
+            @endforeach
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -34,7 +30,8 @@
       </div>
       <div class="col-md-6 ftco-animate p-4 p-md-5 align-items-center">
         <h1 class="display-2">{{$proyect->nombre}}</h1>
-        Libero sit reiciendis. Molestias aliquid pariatur dolores exercitationem architecto et. Molestiae maxime omnis sunt aliquid non et. Consequuntur porro temporibus repellat eos illo.
+      <p class="display3">{{$proyect->creado->format('d-m-Y')}} - @if($proyect->status === 1) Diseño @elseif($proyect->status === 2) Construccion @elseif($proyect->status === 3)  Terminado @endif - {{$proyect->category->nombre}}</p>
+      <p class="display4">{{$proyect->descripcion}}</p>
       </div>
     </div>
   </div>
