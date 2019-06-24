@@ -36,20 +36,20 @@
         <div class="row">
             <div class="col-md-4 ftco-animate">
                 <div class="services">
-                    <h3><span>01.</span> Step 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem dignissimos quae cum beatae assumenda, nihil dicta. Totam, cumque recusandae?</p>
+                    <h3><span>01.</span> Fundamentos</h3>
+                    <p>Visualizacion del cliente</p>
                 </div>
             </div>
             <div class="col-md-4 ftco-animate">
                 <div class="services">
-                    <h3><span>02.</span>Step 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure blanditiis possimus eos autem molestiae!</p>
+                    <h3><span>02.</span>Creatividad</h3>
+                    <p>Proceso de diseño de acuerdo a las necesidades del cliente</p>
                 </div>
             </div>
             <div class="col-md-4 ftco-animate">
                 <div class="services">
-                    <h3><span>03.</span> Step 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas consequuntur facere hic odio amet laudantium omnis, nostrum natus.</p>
+                    <h3><span>03.</span> Ejecucion</h3>
+                    <p>Solucion geometrica y de ingenieria del proyecto</p>
                 </div>
             </div>
         </div>
@@ -75,7 +75,6 @@
                     <div class="pt-4 text-center">
                       <h5 class="title">
                         <span class="d-block mb-1">Adrian Alonso</span>
-                        <small class="h6 text-muted">Founder and CEO</small>
                       </h5>
                     </div>
                   </div>
@@ -87,7 +86,6 @@
                 <div class="pt-4 text-center">
                   <h5 class="title">
                     <span class="d-block mb-1">Ale abcd</span>
-                    <small class="h6 text-muted">UI/UX Designer</small>
                   </h5>
                 </div>
               </div>

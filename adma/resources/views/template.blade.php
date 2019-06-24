@@ -23,9 +23,9 @@
     <body>
         {{-- header --}}
         <header class="header-global">
-            <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
+            <nav id="navbar-main" class="navbar navbar-main navbar-dark navbar-expand-lg bg-dark">
                 <div class="container">
-                    <a class="navbar-brand text-dark" href="#">Default Color</a>
+                <a class="navbar-brand text-dark" href="{{route('home')}}"><img src="{{asset('img/logo.png')}}" alt="logo" class="img-fluid big"/></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,7 +34,7 @@
                             <div class="row">
                                 <div class="col-6 collapse-brand">
                                     <a href="{{route('home')}}">
-                                    <img src="{{asset('img/logo.png')}}">
+                                    <img src="{{asset('img/logo.png')}}" class="big">
                                     </a>
                                 </div>
                                 <div class="col-6 collapse-close">
@@ -48,21 +48,21 @@
             
                         <ul class="navbar-nav ml-lg-auto">
                             <li class="nav-item">
-                            <a class="nav-link nav-link-icon text-dark" href="{{route('home')}}">
+                            <a class="nav-link nav-link-icon" href="{{route('home')}}">
                                     <i class="ni ni-favourite-28"></i>
-                                    <span class="color nav-link-inner--text">Home</span>
+                                    <span class="nav-link-inner--text">Home</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link nav-link-icon text-dark" href="{{route('allProyects')}}">
+                            <a class="nav-link nav-link-icon" href="{{route('allProyects')}}">
                                     <i class="ni ni-folder-17"></i>
-                                    <span class="color nav-link-inner--text">Portafolio</span>
+                                    <span class="nav-link-inner--text">Portafolio</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link nav-link-icon text-dark" href="{{route('about')}}">
+                            <a class="nav-link nav-link-icon" href="{{route('about')}}">
                                     <i class="ni ni-satisfied"></i>
-                                    <span class="color nav-link-inner--text">About</span>
+                                    <span class="nav-link-inner--text">About</span>
                                 </a>
                             </li>
                         </ul>
@@ -80,8 +80,8 @@
               <div class="container py-lg-md d-flex">
                   <div class="col px-0">
                       <div class="row">
-                          <div class="col-lg-6">
-                              <h1 class=" color display-3  text-black">ADMA Arquitectos
+                          <div class="color col-lg-6">
+                              <h1 class="display-3  text-black">ADMA Arquitectos
                               <span><strong>La arquitectura es la materialización de los sueños del hombre.</strong></span>
                               </h1>
                           </div>

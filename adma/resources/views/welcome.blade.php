@@ -26,33 +26,29 @@
         <div class="container">
             <div class="row row-grid align-items-center">
                 <div class="col-md-6">
-                    <p>SEPTIEMBRE 2017 - CONCLUIDO - INTERVENCIÓN URBANO ARQUITECTÓNICA</p>
+                    <small class="h6 text-muted">SEPTIEMBRE 2017 - CONCLUIDO - INTERVENCIÓN URBANO ARQUITECTÓNICA</small>
                     <div class="thumbnail">
                         <img src="{{asset('img/portfolio/destacados/RENDER PERRON 01.jpg')}}" alt="CHOCOLIN 03" class="img-responsive image-item">
-                        <div class="caption">
-                            <h3 class="display-3 text-darker"><strong>CHOCOLIN 03</strong></h3>
-                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="pl-md-5">
-                        <p class="lead">Chocolin 03 es un proyecto que atiende a las necesidades generales y particulares de comerciantes y usuarios de la zona pirotécnica, potencializando urbanísticamente el entorno, respetando el medio físico, sin pasar por alto la seguridad que este exige.</p>
+                        <h3 class="display-4">Chocolin 03</h3>
+                        <p class="lead text-justify">Es un proyecto que atiende a las necesidades generales y particulares de comerciantes y usuarios de la zona pirotécnica, potencializando urbanísticamente el entorno, respetando el medio físico, sin pasar por alto la seguridad que este exige.</p>
                     </div>
                 </div>
             </div>
             <div class="row row-grid align-items-center">
                 <div class="col-md-6">
                     <div class="pl-md-5">
-                        <p class="lead">El reto de concebir arquitectura minimalista contemporánea en una construcción de más de 30 años de antigüedad, cuidando minuciosamente la estructura existente para no afectar la misma sin perder el sentido vanguardista del diseño.</p>
+                        <h3 class="display-4">Atenco</h3>
+                        <p class="lead text-justify">El reto de concebir arquitectura minimalista contemporánea en una construcción de más de 30 años de antigüedad, cuidando minuciosamente la estructura existente para no afectar la misma sin perder el sentido vanguardista del diseño.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p>OCTUBRE 2018 - CONCLUIDO – CASA HABITACION</p>
+                    <small class="h6 text-muted">OCTUBRE 2018 - CONCLUIDO – CASA HABITACION</small>
                     <div class="thumbnail">
-                    <img src="{{asset('img/portfolio/destacados/R4.jpg')}}" alt="ATENCO 12" class="img-responsive image-item">
-                        <div class="caption">
-                            <h3 class="display-3 text-darker"><strong>ATENCO 12</strong></h3>
-                        </div>
+                        <img src="{{asset('img/portfolio/destacados/R4.jpg')}}" alt="ATENCO 12" class="img-responsive image-item">
                     </div>
                 </div>
             </div>
