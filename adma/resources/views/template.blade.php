@@ -25,7 +25,7 @@
         <header class="header-global">
             <nav id="navbar-main" class="navbar navbar-main navbar-dark navbar-expand-lg bg-dark">
                 <div class="container">
-                <a class="navbar-brand text-dark" href="{{route('home')}}"><img src="{{asset('img/logo.png')}}" alt="logo" class="img-fluid big"/></a>
+                <a class="navbar-brand text-dark" href="{{route('home')}}"><img src="{{asset('img/LOGO ADMA BLANCO.png')}}" alt="logo" class="img-fluid big"/></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -98,10 +98,9 @@
             <div class="container">
               <div class="row row-grid align-items-center mb-10 ">
                 <div class="col-lg-2">
-                  <img
-                    src="{{asset('img/logo.png')}}"
+                  <img class="big img-fluid"
+                    src="{{asset('img/LOGO ADMA BLANCO.png')}}"
                     alt="logo"
-                    style="width:80px;"
                   />
                 </div>
                 <div class="col-md-10 align-center  ">

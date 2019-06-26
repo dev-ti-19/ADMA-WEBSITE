@@ -7,7 +7,7 @@
             <div class="col-md-5 py-5 nav-link-wrap ftco-animate " style="background-color: black;" >
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
                 <h3 class="ml-3 text-white"> Nuestros servicios</h3>
-                @foreach ($servicios as $key => $servicio)                    <a class="@if($key === 0) active @endif nav-link px-4" style="background-color: black;" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab" data-toggle="pill" href="#v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tab" aria-controls="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" aria-selected="true">° {{$servicio->nombre}}</a>
+                @foreach ($servicios as $key => $servicio)                    <h3 class="text-white @if($key === 0) active @endif nav-link px-4" style="background-color: black; cursor: pointer" id="v-pills-{{str_replace(' ', '', $servicio->nombre)}}-tab" data-toggle="pill" href="#v-pills-{{str_replace(' ', '', $servicio->nombre)}}" role="tab" aria-controls="v-pills-{{str_replace(' ', '', $servicio->nombre)}}" aria-selected="true">° {{$servicio->nombre}}</h3>
                 @endforeach
               </div>
             </div>
@@ -67,30 +67,59 @@
           </p>  
           </div>
         </div>
-          <div class="row" >
-              <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
-                  <div class="px-4">
-                    <img src="{{asset('img/adrian.jpg')}}"
-                      class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
-                    <div class="pt-4 text-center">
-                      <h5 class="title">
-                        <span class="d-block mb-1">Adrian Alonso</span>
-                      </h5>
-                    </div>
-                  </div>
-                </div>
+        <div class="row" >
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
               <div class="px-4">
-              <img src="{{asset('img/ale.jpg')}}"
-                  class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+                <img src="{{asset('img/adrian.jpg')}}"
+                  class="img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
                 <div class="pt-4 text-center">
                   <h5 class="title">
-                    <span class="d-block mb-1">Ale abcd</span>
+                    <span class="d-block mb-1">Ing. Arq. Adrian Alonso</span>
+                    <small class="h6 text-muted">Fundador</small>
                   </h5>
                 </div>
               </div>
             </div>
+            <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
+              <div class="px-4">
+              <img src="{{asset('img/ale.jpg')}}"
+                  class="img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+                <div class="pt-4 text-center">
+                  <h5 class="title">
+                    <span class="d-block mb-1">Ing. Arq. Alejandro Reyes</span>
+                    <small class="h6 text-muted">Co-Fundador</small>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
+            <div class="px-4">
+              <img src="{{asset('img/adrian.jpg')}}"
+                class="img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+              <div class="pt-4 text-center">
+                <h5 class="title">
+                  <span class="d-block mb-1">Ing. Arq.  Freddy Abad</span>
+                  <small class="h6 text-muted">Socio</small>
+                </h5>
+              </div>
+            </div>
           </div>
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
+            <div class="px-4">
+            <img src="{{asset('img/diego.jpeg')}}"
+                class="img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
+              <div class="pt-4 text-center">
+                <h5 class="title">
+                  <span class="d-block mb-1">Arq. Diego Arias</span>
+                  <small class="h6 text-muted">Dibujante</small>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 @endsection
